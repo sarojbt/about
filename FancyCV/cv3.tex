@@ -1,0 +1,248 @@
+%!TEX TS-program = xelatex
+\documentclass[]{friggeri-cv}
+\usepackage{afterpage}
+\usepackage{hyperref}
+\usepackage{color}
+\usepackage{xcolor}
+\usepackage{multicol}
+\usepackage{rotating, graphicx}
+%\usepackage{mdframed}
+%\usepackage[most]{tcolorbox}
+\usepackage[utf8]{inputenc} 
+\usepackage{geometry} 
+\usepackage{tikz} 
+
+\newcommand{\mybox}[4]{
+    \begin{figure}[h]
+        \centering
+    \begin{tikzpicture}
+        \node[anchor=text,text width=\columnwidth-1.2cm, draw, rounded corners, line width=1pt, fill=#3, inner sep=5mm] (big) {\\#4};
+        \node[draw, rounded corners, line width=.5pt, fill=#2, anchor=west, xshift=5mm] (small) at (big.north west) {#1};
+    \end{tikzpicture}
+    \end{figure}
+}
+
+
+\setlength{\columnseprule}{1pt}
+\def\columnseprulecolor{\color{blue}}
+
+
+\hypersetup{
+    pdftitle={},
+    pdfauthor={},
+    pdfsubject={},
+    pdfkeywords={},
+    colorlinks=false,       % no lik border color
+   allbordercolors=white    % white border color for all
+}
+\addbibresource{bibliography.bib}
+\RequirePackage{xcolor}
+\definecolor{pblue}{HTML}{0395DE}
+
+\begin{document}
+\header{SK }{Tondwalkar}
+      {Engineering Leader}
+      
+% Fake text to add separator      
+\fcolorbox{white}{gray}{\parbox{\dimexpr\textwidth-2\fboxsep-2\fboxrule}{%
+.....
+}}
+
+
+% In the aside, each new line forces a line break
+
+\begin{aside}
+\includegraphics[height=3.5cm]{0.jpg}
+~
+    ~      
+  \section{Name}
+     Sarojkumar B. Tondwalkar
+    ~    
+~
+\includegraphics[angle=90,height=5cm]{img/AWS_Certified_Logo_SAA_294x230_Color.png}
+%\includegraphics[angle=90,height=5cm]{img/AWS_Certified_Tag__SAA_294x230-Color.png}
+~
+    ~      
+  \section{Nationality}
+     United States
+    ~    
+~
+~
+  \section{Contact}
+    +1 (571) 488 0592
+    \href{mailto:sarojbt@yahoo.com}{sarojbt@yahoo.com}
+   ~
+~
+~
+\section{Address}
+    14014 Eagle Chase Cir
+    Chantilly, VA 20151
+    USA
+\end{aside}
+
+\section{Interest}
+
+Build highly efficient agile teams. Build secure, highly resilient systems and cost saving architecture for future business growth. Employ data gathering, business intellegence and machine learning to transform business.
+
+\section{Experience}
+\begin{entrylist}
+  \entry
+    {08 2012- .}
+    {Capital One, McLean, USA}
+    {Sr Manager Engineering}
+    {\emph{Build strong agile teams - RESTful service, devops, commercial bank, IAM.}\\}
+  \entry
+    {06 2006-12}
+    {Fannie Mae, Washington D.C., USA}
+    {Sr. Production Manager}
+    {\emph{Build and own(E2E) trade decision system; compliance certification; DR}\\}
+  \entry
+    {06 2000–06}
+    {S.W.I.F.T.  (Interbank Telecommunication), NoVA}
+    {Sr. Technical Lead}
+    {\emph{Build automated QA; performance tuning; capacity planning}\\}
+\end{entrylist}
+
+\section{Applications}
+
+\begin{entrylist}
+  \entry
+    {Current}
+    {DISRUPT banking technology}
+    {\href{http://www.capitalone.com}{capitalone.com}}
+    {Build secure and resilient API on AWS cloud using Container management and Agile Methodology\\
+    $\bullet$ Small business marketing - Architect, API Coach, Microservices, Devops, Serverless, Automation, CICD \\
+    $\bullet$ IAM - Facial recog, Identity capture, conversion from RSA to Forgerock, MFA\\
+    $\bullet$ Commercial banking - Risk assessment workflow, PMT and treasury management \\} 
+  \entry
+    {2012}
+    {Trade decision-ing Webapp systems}
+    {\href{http://www.fanniemae.com}{fanniemae.com}}
+    {System ownership; Resiliency and Audit\\
+    $\bullet$ From design to operations - Interest Rate DB and Data Analytics Engine \\
+    $\bullet$ Sox and regulatory compliance monitoring and certification\\
+    $\bullet$ Disaster recovery strategy, exercise and maintenance\\}
+  \entry
+    {2006}
+    {Resilient, high quality and HA system}
+    {\href{http://www.swift.com}{swift.com}}
+    {$\bullet$ Quality, performance tuning and capacity planning and provisioning for future\\
+     $\bullet$ Auto error detection and recovery with a living knowledge based system\\}
+  \entry
+    {2000}
+    {Build framework for interoperable systems}
+    {\href{http://www.verizon.com}{verizon.com}}
+    {$\bullet$ Build RPC CORBA compiler and IIOP for various languages, Publish/Subscribe event services engine from W3C standards\\}
+\end{entrylist}
+
+\newpage
+\header{SK }{Tondwalkar}
+      {Leader}
+
+% Fake text to add separator      
+\fcolorbox{white}{gray}{\parbox{\dimexpr\textwidth-2\fboxsep-2\fboxrule}{%
+.....
+}}
+
+      
+\begin{aside}
+~
+~
+~
+~
+   \section{tools}
+    Java Clojure C++
+    Git Maven Jenkins
+    Gherkins ATDD CI/CD
+    aws-cli CFT Terraform
+    Python Ruby CSS HTML
+    Angular Javascript
+    JBOSS Weblogic 
+    Postgres
+    Open source (OSS)
+~
+~
+  \section{technologies}
+    Microservices
+    Dockers, ECS (Containers)
+    Serverless
+    aws computing (IAAS)
+    RESTful and SOAP
+    oAuth OpenID connect
+    Agile SAFE
+    Pub-Sub Event Svcs
+    RPC CORBA and IIOP
+~
+~
+  \section{sectors}
+    Banking
+    Financial
+    Telecommunication
+~
+~
+  \section{certification}
+    AWS assoc architect
+    Data Security
+    TOGAF 10
+    Chef
+    Agile methodologies
+    Forgerock IAM
+    Performance tuning
+    Databases
+    Communication
+    ~      
+\end{aside}
+
+
+\section{Education}
+\begin{entrylist}
+  \entry
+    {}
+    {Ph.D. {candidate in Computer Science }}
+    {George Mason University,  Fairfax, VA}
+    {\emph{Improving efficiency of parallel processors}}
+  \entry
+    {}
+    {M.Sc. Computer Science with High Distinction}
+    {University of Bombay, Mumbai}
+    {Specialization in real time database systems}
+  \entry
+    {}
+    {B.Sc. Physics with Highest Distinction}
+    {University of Bombay, Mumbai} 
+    {}
+    
+\end{entrylist}
+
+\mybox{My Business Value}{blue!20}{green!10}{Commitment to business, for a high throughput real-time solution. Balancing between priorities, time to market and technical debt. Coach business leaders, executives and partners in mindsets to understand agile and change the way they engage with product and engineering to ensure more value is delivered to the organization.}
+
+\mybox{My Leadership}{blue!20}{green!10}{Strong analytic skills and ability to foresee and manage risk. Mastery of complex facilitation and dependency management techniques. Influencing skills to effectively drive project and program efforts across all levels of the organization. Work across teams in a matrix organization. Build highly skilled and motivated devops teams for dynamic and complex projects. Fail fast, fail often, fail forward a route to enhance rate of success. Use metrics to monitor progress, quality and value.}
+
+\mybox{Technology Imperatives}{blue!20}{green!10}{Adopt apt technologies, use open source and cloud computing, encourage inner sourcing and collaborative contribution model. Reuse over reinvent. Stay current on technology stack. Strong awareness of domain architecture and system interfaces. Strategize technology imperatives of security, resilience, scaling, automation and monitoring. }
+
+\section{Skills}
+\begin{flushright}
+\begin{multicols}{3}
+   \textbf{Empower}\includegraphics[scale=0.40]{img/5stars.png}\\
+    \textbf{Mentor}\includegraphics[scale=0.40]{img/4stars.png}\\
+  \textbf{Empathize}\includegraphics[scale=0.40]{img/4stars.png}\\
+  \textbf{Innovate}\includegraphics[scale=0.40]{img/4stars.png}\\
+    \textbf{Processes}\includegraphics[scale=0.40]{img/5stars.png}\\
+    \textbf{Open source}\includegraphics[scale=0.40]{img/5stars.png}\\
+    \textbf{Cloud first}\includegraphics[scale=0.40]{img/5stars.png}\\
+    \textbf{Automation}\includegraphics[scale=0.40]{img/5stars.png}\\
+    \textbf{DevOps}\includegraphics[scale=0.40]{img/5stars.png}\\
+    \textbf{Agile}\includegraphics[scale=0.40]{img/4stars.png}\\
+    \textbf{Security}\includegraphics[scale=0.40]{img/4stars.png}\\
+    \textbf{Resilience}\includegraphics[scale=0.40]{img/5stars.png}\\
+    \textbf{Audit and Risks}\includegraphics[scale=0.40]{img/3stars.png}\\
+    \textbf{Proactive}\includegraphics[scale=0.40]{img/4stars.png}\\
+    \textbf{Metrics}\includegraphics[scale=0.40]{img/4stars.png}\\
+
+\end{multicols}
+\end{flushright}
+% Fake text to add separator      
+\fcolorbox{white}{gray}{\parbox{\dimexpr\textwidth-2\fboxsep-2\fboxrule}{%
+.....
+}}
+\end{document}
