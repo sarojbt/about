@@ -1,0 +1,109 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Authors:
+% Claud D. Park <posquit0.bj@gmail.com>
+% Lars Richter <mail@ayeks.de>
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Configuration
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Themes: Awesome-CV
+\documentclass[11pt, a4paper]{awesome-cv}
+
+%%% Override a directory location for fonts(default: 'fonts/')
+\fontdir[fonts/]
+
+%%% Configure a directory location for sections
+\newcommand*{\sectiondir}{cv/}
+
+%%% Override color
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+%% Color for highlight
+% Define your custom color if you don't like awesome colors
+\colorlet{awesome}{awesome-red}
+%\definecolor{awesome}{HTML}{CA63A8}
+%% Colors for text
+%\definecolor{darktext}{HTML}{414141}
+%\definecolor{text}{HTML}{414141}
+%\definecolor{graytext}{HTML}{414141}
+%\definecolor{lighttext}{HTML}{414141}
+
+%%% Override a separator for social informations in header(default: ' | ')
+%\headersocialsep[\quad\textbar\quad]
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Personal Data
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Essentials
+\name{Sarojkumar "SK" B.}{Tondwalkar}
+\address{14014 Eagle Chase Circle, Chantilly VA 20151, USA}
+\mobile{(+1)571-488-0592} 
+%%% Social
+\email{sarojbt@yahoo.com}
+%\homepage{www.posquit0.com}
+%\github{posquit0}
+\linkedin{sarojbt}
+%%% Optionals
+\position{Director Software Engineer{\enskip\cdotp\enskip}Cloud and Security Expert}
+\quote{``Make the change that you want to see in the world."}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Letter Data (Cover Letter)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\recipient
+  {Company Recruitment Team}
+  {Walmart Inc.\\
+%  1600 Amphitheatre Parkway\\Mountain View, CA 94043
+  }
+\letterdate{\today}
+\lettertitle{Job Application for Director Software Engineering}
+\letteropening{Dear Manager,}
+\letterclosing{Sincerely,}
+\letterenclosure[Attached]{Curriculum Vitae}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Content
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Make a footer for CV with three arguments(<left>, <center>, <right>)
+\makecvfooter
+  {\today}
+  {Sarojkumar B. Tondwalkar~~~·~~~Cover Letter}
+  {}
+
+\begin{document}
+%%% Make a header for CV using personal data
+\makecvheader
+
+%%% Make a title for Cover Letter using letter data
+\makelettertitle
+
+%%% Write content for your cover letter
+\begin{cvletter}
+\cvparagraph{About Me}
+I am employed at Capital One in Northern Virginia as a Sr. Manager Software Engineering. I have led several teams across the organization.  Have strong experience in API development, using AWS Cloud, employing Agile methodology.  I have built DevOps teams. I have built highly secure and resilient systems. With more knowledge on the posted job role, I will be able to engage in a deeper discussion. 
+
+\cvparagraph{Why Walmart?}
+Recent tie up between Walmart and Capital One, has brought to my attention that Walmart is aiming to go even deeper in leveraging state of the art technology.  I am looking for growth and eager to contribute to the vision and growth of Walmart.
+
+\cvparagraph{Why Me?}
+I have the very strong hands-on experience of building DevOps teams of over 30 associates.  I have seen success in empowering and facilitating associates to give their best and bring innovation by looking for open source opportunities. I have mentoring and raised the bar in software delivery in all lines of business that I have worked. I have very strong experience in building well architect-ed systems. I would like to know more about this opportunity. 
+
+\end{cvletter}
+
+%%% Make a closing for Cover Letter using letter data
+\makeletterclosing
+
+\end{document}
